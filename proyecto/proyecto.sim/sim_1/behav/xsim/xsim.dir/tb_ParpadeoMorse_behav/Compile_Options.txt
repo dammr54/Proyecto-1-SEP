@@ -1,0 +1,1 @@
+-wto "d6ab4135ffa54d3ca119570d27519ca5" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_ParpadeoMorse_behav" "xil_defaultlib.tb_ParpadeoMorse" -log "elaborate.log" 
