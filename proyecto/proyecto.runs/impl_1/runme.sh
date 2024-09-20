@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Diego/Desktop/12 semestre/SEP/proyecto1/proyecto/proyecto.runs/impl_1'
+HD_PWD='C:/Users/Diego/Desktop/Proyecto-1-SEP/proyecto/proyecto.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log SistemaMorse.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source SistemaMorse.tcl -notrace
 
 

@@ -15,6 +15,19 @@ entity ParpadeoMorse is
 end ParpadeoMorse;
 
 architecture Behavioral of ParpadeoMorse is
+    -- Función para contar los '1's en la máscara
+    function contar_unos(mascara: STD_LOGIC_VECTOR) return integer is
+        variable count : integer := 0;
+    begin
+        for i in mascara'range loop
+            if mascara(i) = '1' then
+                count := count + 1;
+            end if;
+        end loop;
+        return count;
+    end function;
+
+
     signal contador      : integer := 0;      -- Contador para dividir la frecuencia del reloj
     signal bit_idx       : integer range 0 to 4 := 0; -- Índice para recorrer los bits
     constant MAX_COUNT_LONG  : integer := 125000000; -- Tiempo largo (1 segundo si el reloj es de 125 MHz)
@@ -44,7 +57,7 @@ begin
             -- Detectar el flanco de subida de flag
             if flag = '1' and prev_flag = '0' then
                 sequence_done <= FALSE; -- Reiniciar la secuencia al detectar el pulso
-                bit_idx <= 0;           -- Comenzar desde el primer bit
+                bit_idx <= contar_unos(mascara) - 1;           -- Comenzar desde el primer bit
                 save_morse <= morse;
                 save_mascara <= mascara;
                 led_on <= TRUE;         -- Iniciar con LED encendido
