@@ -1,0 +1,47 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"729,-138",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk -pg 1 -lvl 0 -x -10 -y 70 -defaultsOSRD
+preplace port rst -pg 1 -lvl 0 -x -10 -y 150 -defaultsOSRD
+preplace port btn3 -pg 1 -lvl 0 -x -10 -y 260 -defaultsOSRD
+preplace port btn1 -pg 1 -lvl 0 -x -10 -y 280 -defaultsOSRD
+preplace port btn2 -pg 1 -lvl 0 -x -10 -y 300 -defaultsOSRD
+preplace port led -pg 1 -lvl 4 -x 1100 -y 110 -defaultsOSRD
+preplace port red -pg 1 -lvl 4 -x 1100 -y -40 -defaultsOSRD
+preplace port green -pg 1 -lvl 4 -x 1100 -y -20 -defaultsOSRD
+preplace port blue -pg 1 -lvl 4 -x 1100 -y 0 -defaultsOSRD
+preplace portBus sw -pg 1 -lvl 0 -x -10 -y 320 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 1 -x 390 -y 70 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 3 -x 990 -y 200 -defaultsOSRD
+preplace inst sistema_morse_0 -pg 1 -lvl 2 -x 740 -y 210 -defaultsOSRD
+preplace inst ControlUnit_0 -pg 1 -lvl 1 -x 390 -y 270 -defaultsOSRD
+preplace inst RGB_Controller_1 -pg 1 -lvl 2 -x 740 -y -20 -defaultsOSRD
+preplace netloc clk_0_1 1 0 3 20 -10 540 350 900J
+preplace netloc rst_0_1 1 0 2 10 400 550J
+preplace netloc btn_enable_0_1 1 0 1 NJ 260
+preplace netloc boton1_0_1 1 0 1 NJ 280
+preplace netloc boton2_0_1 1 0 1 NJ 300
+preplace netloc switches_0_1 1 0 1 NJ 320
+preplace netloc vio_0_probe_out0 1 1 1 570 50n
+preplace netloc vio_0_probe_out1 1 1 1 560 70n
+preplace netloc ControlUnit_0_write_in 1 1 1 570 200n
+preplace netloc ControlUnit_0_ram_enable 1 1 1 530 220n
+preplace netloc ControlUnit_0_ram_data_morse 1 1 1 530 240n
+preplace netloc ControlUnit_0_ram_data_mask 1 1 1 530 260n
+preplace netloc ControlUnit_0_ram_addr 1 1 1 530 280n
+preplace netloc sistema_morse_0_led 1 2 2 890 110 NJ
+preplace netloc sistema_morse_0_morse_out 1 2 1 N 210
+preplace netloc sistema_morse_0_mask_out 1 2 1 N 230
+preplace netloc RGB_Controller_1_red 1 2 2 NJ -40 NJ
+preplace netloc RGB_Controller_1_green 1 2 2 NJ -20 NJ
+preplace netloc RGB_Controller_1_blue 1 2 2 NJ 0 NJ
+preplace netloc vio_0_probe_out2 1 1 1 550 -10n
+levelinfo -pg 1 -10 390 740 990 1100
+pagesize -pg 1 -db -bbox -sgen -110 -160 1190 410
+"
+}
+

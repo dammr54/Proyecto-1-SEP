@@ -1,85 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1726872117">
-  <File Type="ROUTE-PWR" Name="SistemaMorse_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="SistemaMorse.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="SistemaMorse_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="SistemaMorse_reports.tcl"/>
-  <File Type="BITSTR-MSK" Name="SistemaMorse.msk"/>
-  <File Type="ROUTE-CLK" Name="SistemaMorse_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="SistemaMorse.vdi"/>
-  <File Type="BG-BIT" Name="SistemaMorse.bit"/>
-  <File Type="BG-DRC" Name="SistemaMorse.drc"/>
-  <File Type="BG-BGN" Name="SistemaMorse.bgn"/>
-  <File Type="BG-BIN" Name="SistemaMorse.bin"/>
-  <File Type="BITSTR-RBT" Name="SistemaMorse.rbt"/>
-  <File Type="BITSTR-NKY" Name="SistemaMorse.nky"/>
-  <File Type="BITSTR-BMM" Name="SistemaMorse_bd.bmm"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="SistemaMorse_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MMI" Name="SistemaMorse.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="SistemaMorse.sysdef"/>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1726968473">
+  <File Type="BITSTR-BMM" Name="ParpadeoMorse_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="ParpadeoMorse_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="ParpadeoMorse_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="ParpadeoMorse_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="ParpadeoMorse.tcl"/>
+  <File Type="OPT-TIMING" Name="ParpadeoMorse_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="ParpadeoMorse_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="ParpadeoMorse_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="ParpadeoMorse_reports.tcl"/>
+  <File Type="OPT-DRC" Name="ParpadeoMorse_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="ParpadeoMorse.hwdef"/>
+  <File Type="PWROPT-DCP" Name="ParpadeoMorse_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="ParpadeoMorse_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="ParpadeoMorse_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="ParpadeoMorse_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ParpadeoMorse_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ParpadeoMorse_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ParpadeoMorse_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ParpadeoMorse_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ParpadeoMorse_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="ParpadeoMorse_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ParpadeoMorse_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="ParpadeoMorse_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ParpadeoMorse_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="ParpadeoMorse.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ParpadeoMorse_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ParpadeoMorse_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="ParpadeoMorse_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="ParpadeoMorse.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="ParpadeoMorse_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ParpadeoMorse_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="ParpadeoMorse_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ParpadeoMorse_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="ParpadeoMorse_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ParpadeoMorse_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="ParpadeoMorse_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="ParpadeoMorse.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ParpadeoMorse_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ParpadeoMorse_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ParpadeoMorse_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="ParpadeoMorse_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="ParpadeoMorse_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ParpadeoMorse_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ParpadeoMorse_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="ParpadeoMorse_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ParpadeoMorse_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="ParpadeoMorse_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="ParpadeoMorse_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="ParpadeoMorse_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="ParpadeoMorse_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="ParpadeoMorse_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ParpadeoMorse_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ParpadeoMorse_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ParpadeoMorse_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ParpadeoMorse_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ParpadeoMorse_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ParpadeoMorse_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ParpadeoMorse_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="ParpadeoMorse.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ParpadeoMorse_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="ParpadeoMorse.rbt"/>
+  <File Type="BITSTR-NKY" Name="ParpadeoMorse.nky"/>
+  <File Type="PDI-FILE" Name="ParpadeoMorse.pdi"/>
+  <File Type="RCFI_FILE" Name="ParpadeoMorse.rcfi"/>
+  <File Type="CFI_FILE" Name="ParpadeoMorse.cfi"/>
+  <File Type="RNPI_FILE" Name="ParpadeoMorse.rnpi"/>
+  <File Type="NPI_FILE" Name="ParpadeoMorse.npi"/>
+  <File Type="RBD_FILE" Name="ParpadeoMorse.rbd"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="SistemaMorse.ltx"/>
+  <File Type="BITSTR-LTX" Name="ParpadeoMorse.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="ParpadeoMorse.sysdef"/>
+  <File Type="BG-BGN" Name="ParpadeoMorse.bgn"/>
+  <File Type="BG-DRC" Name="ParpadeoMorse.drc"/>
+  <File Type="RDI-RDI" Name="ParpadeoMorse.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="OPT-DRC" Name="SistemaMorse_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="SistemaMorse.hwdef"/>
-  <File Type="PLACE-IO" Name="SistemaMorse_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="SistemaMorse_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="SistemaMorse_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="SistemaMorse_control_sets_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="SistemaMorse_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DRC" Name="SistemaMorse_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="SistemaMorse_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="SistemaMorse_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="SistemaMorse_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="SistemaMorse_route_status.pb"/>
-  <File Type="ROUTE-DCP" Name="SistemaMorse_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="SistemaMorse_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="SistemaMorse_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="SistemaMorse_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="SistemaMorse_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="SistemaMorse_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-BUS-SKEW" Name="SistemaMorse_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="SistemaMorse_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="SistemaMorse_bus_skew_routed.rpx"/>
-  <File Type="OPT-DCP" Name="SistemaMorse_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="SistemaMorse_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="SistemaMorse_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="SistemaMorse_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="SistemaMorse_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SistemaMorse_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SistemaMorse_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SistemaMorse_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="SistemaMorse_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SistemaMorse_methodology_drc_routed.rpx"/>
-  <File Type="PDI-FILE" Name="SistemaMorse.pdi"/>
-  <File Type="RCFI_FILE" Name="SistemaMorse.rcfi"/>
-  <File Type="CFI_FILE" Name="SistemaMorse.cfi"/>
-  <File Type="RNPI_FILE" Name="SistemaMorse.rnpi"/>
-  <File Type="NPI_FILE" Name="SistemaMorse.npi"/>
-  <File Type="RBD_FILE" Name="SistemaMorse.rbd"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/codigo_morse.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/parpadeo_morse.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/sistema_morse.vhd">
+    <File Path="$PSRCDIR/sources_1/new/codigo_morse.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/ram_morse.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sistema_morse.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="SistemaMorse"/>
+      <Option Name="TopModule" Val="ParpadeoMorse"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

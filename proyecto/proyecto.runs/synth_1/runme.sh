@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Diego/Desktop/12 semestre/SEP/proyecto1/proyecto/proyecto.runs/synth_1'
+HD_PWD='C:/Users/Diego/Desktop/Proyecto-1-SEP/proyecto/proyecto.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log SistemaMorse.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SistemaMorse.tcl
+EAStep vivado -log ParpadeoMorse.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ParpadeoMorse.tcl

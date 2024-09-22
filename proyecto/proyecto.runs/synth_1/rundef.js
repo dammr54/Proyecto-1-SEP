@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log SistemaMorse.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SistemaMorse.tcl" );
+         "-log ParpadeoMorse.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ParpadeoMorse.tcl" );
 
 
 

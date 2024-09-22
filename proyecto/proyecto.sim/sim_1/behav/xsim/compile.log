@@ -1,4 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Diego/Desktop/12 semestre/SEP/proyecto1/proyecto/proyecto.srcs/sources_1/new/parpadeo_morse.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Diego/Desktop/Proyecto-1-SEP/proyecto/proyecto.srcs/sources_1/new/parpadeo_morse.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'ParpadeoMorse'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Diego/Desktop/12 semestre/SEP/proyecto1/proyecto/proyecto.srcs/sim_1/new/test3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Diego/Desktop/Proyecto-1-SEP/proyecto/proyecto.srcs/sim_1/new/test3.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'tb_ParpadeoMorse'

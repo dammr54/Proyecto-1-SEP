@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>sistema_morse</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>rst</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>rst</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET">rst</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>sistema_morse</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>435e4055</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>sistema_morse</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>04552ac1</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f64a5dae</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rst</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>selec_enable</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>seleccion</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">5</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>write_in</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>ram_enable</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>ram_data_morse</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">4</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>ram_data_mask</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">4</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>ram_addr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>led</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>morse_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">4</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>mask_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">4</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>constrs_1/imports/archivos_vivado/Zybo-Z7-Master.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sources_1/new/codigo_morse.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sources_1/new/parpadeo_morse.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sources_1/new/ram_morse.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sources_1/new/sistema_morse.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_12546aa1</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sources_1/new/codigo_morse.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sources_1/new/parpadeo_morse.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sources_1/new/ram_morse.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sources_1/new/sistema_morse.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/sistema_morse_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_f64a5dae</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>sistema_morse_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">sistema_morse_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplusHBM</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynquplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexu</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>sistema_morse_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>7</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-09-22T01:39:31Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4288d65e_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31dbbf4c_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a4ba0dd_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f73cac3_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@564a65f9_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33d9c39d_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ce7e02d_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12b2d81e_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cd01694_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ac487c4_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7737f59_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@450c9e5b_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48947279_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@732a70f5_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7082f3ff_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7de82446_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@556f3642_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b2ba37_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41c28627_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21aa53d5_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d49d692_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@345a9ac5_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b0d60a1_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dca2595_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5761abaa_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58e0565b_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66cd8d8d_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fbbe168_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58ddf7e7_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@632d750e_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8668c6a_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7907287c_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2209ea8_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ff87574_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@182a0155_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dc7e1b4_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33d37ace_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76f4787b_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66196c53_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@413dce0c_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f6abcc7_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@204709fd_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a9e80f0_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29eb3062_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41b878f_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@974665f_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19d59d25_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32110245_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43cc676_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dc32bde_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10e9a66e_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2321cd5_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c1e54c_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bc146da_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b11eb8c_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b6d4b6f_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@340c5d9a_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10ca2316_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fc72070_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b7df058_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e882bde_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50f6e36e_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78487e_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@997f8ab_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c1251cb_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6795fdfc_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b7f946a_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c95c9fd_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eb8d3c5_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42ef7b85_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45c79b53_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a6628b0_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@222b1de_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cf9ceac_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ec9b5c_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19b74b74_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57b9bfcc_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57c084b3_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e35b9b_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cd6ef33_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1459ca22_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10865eae_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7619731f_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c30a7c9_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dbe3915_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45090328_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70a5d7b7_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26865b6b_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aa3b8b2_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@797c158_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26224b5c_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b0a5cb_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@207b75fa_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dd2f64c_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ec15679_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8ed54bb_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bd20b59_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4950be47_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39dbe778_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11372049_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5029f915_ARCHIVE_LOCATION">c:/users/diego/desktop/proyecto-1-sep/proyecto/proyecto.srcs</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="25031715"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5fba4089"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="c426d49e"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="6fd4bcf9"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

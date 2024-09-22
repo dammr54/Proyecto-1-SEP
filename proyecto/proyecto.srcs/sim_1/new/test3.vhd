@@ -14,6 +14,12 @@ architecture Behavioral of tb_ParpadeoMorse is
     signal mascara  : STD_LOGIC_VECTOR(4 downto 0) := (others => '0');
     signal flag     : STD_LOGIC := '0';
     signal led      : STD_LOGIC;
+    signal morse_out : STD_LOGIC_VECTOR(4 downto 0); 
+    signal mask_out : STD_LOGIC_VECTOR(4 downto 0);
+    signal bit_idxx: STD_LOGIC;
+    signal bit_idxxx: STD_LOGIC_VECTOR(2 downto 0);
+    signal int_count: integer;
+    
 
     -- Parámetros de reloj
     constant CLOCK_PERIOD : time := 8 ns; -- Período de 125 MHz
@@ -26,7 +32,12 @@ begin
             morse   => morse,
             mascara => mascara,
             flag    => flag,
-            led     => led
+            led     => led,
+            morse_out => morse_out,
+            mask_out => mask_out,
+            bit_idxx => bit_idxx,
+            bit_idxxx => bit_idxxx,
+            int_count => int_count
         );
 
     -- Generador de reloj
@@ -53,11 +64,12 @@ begin
         morse <= "00001"; -- .-
         mascara <= "00011"; -- Se consideran los dos primeros bits
         flag <= '1'; -- Flanco de subida para iniciar la secuencia
-        wait for 40 ns;
+        wait for 20 ns;
         flag <= '0';
         
+        
         -- Esperar a que la secuencia termine
-        wait for 500 ns;
+        wait for 3000 ns;
 
         -- Caso 2: Morse para la letra B (-...) y su máscara
         morse <= "01000"; -- -...

@@ -1,0 +1,273 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x40708E09CAD505EC",
+      "device": "xc7z010clg400-1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "vio_0": "",
+      "ila_0": "",
+      "sistema_morse_0": "",
+      "ControlUnit_0": "",
+      "RGB_Controller_1": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "btn3": {
+        "direction": "I"
+      },
+      "btn1": {
+        "direction": "I"
+      },
+      "btn2": {
+        "direction": "I"
+      },
+      "sw": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "led": {
+        "direction": "O"
+      },
+      "red": {
+        "direction": "O"
+      },
+      "green": {
+        "direction": "O"
+      },
+      "blue": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "design_1_vio_0_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "0"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "3"
+          },
+          "C_PROBE_OUT0_WIDTH": {
+            "value": "6"
+          },
+          "C_PROBE_OUT2_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "design_1_ila_0_0",
+        "parameters": {
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "false"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "3"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "5"
+          },
+          "C_PROBE2_WIDTH": {
+            "value": "5"
+          }
+        }
+      },
+      "sistema_morse_0": {
+        "vlnv": "xilinx.com:user:sistema_morse:1.0",
+        "xci_name": "design_1_sistema_morse_0_0"
+      },
+      "ControlUnit_0": {
+        "vlnv": "xilinx.com:user:ControlUnit:1.0",
+        "xci_name": "design_1_ControlUnit_0_0"
+      },
+      "RGB_Controller_1": {
+        "vlnv": "xilinx.com:user:RGB_Controller:1.0",
+        "xci_name": "design_1_RGB_Controller_1_0"
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "vio_0/clk",
+          "ila_0/clk",
+          "sistema_morse_0/clk",
+          "ControlUnit_0/clk",
+          "RGB_Controller_1/clk"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst",
+          "sistema_morse_0/rst",
+          "ControlUnit_0/rst"
+        ]
+      },
+      "btn_enable_0_1": {
+        "ports": [
+          "btn3",
+          "ControlUnit_0/btn_enable"
+        ]
+      },
+      "boton1_0_1": {
+        "ports": [
+          "btn1",
+          "ControlUnit_0/boton1"
+        ]
+      },
+      "boton2_0_1": {
+        "ports": [
+          "btn2",
+          "ControlUnit_0/boton2"
+        ]
+      },
+      "switches_0_1": {
+        "ports": [
+          "sw",
+          "ControlUnit_0/switches"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "sistema_morse_0/seleccion"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "sistema_morse_0/selec_enable"
+        ]
+      },
+      "ControlUnit_0_write_in": {
+        "ports": [
+          "ControlUnit_0/write_in",
+          "sistema_morse_0/write_in"
+        ]
+      },
+      "ControlUnit_0_ram_enable": {
+        "ports": [
+          "ControlUnit_0/ram_enable",
+          "sistema_morse_0/ram_enable"
+        ]
+      },
+      "ControlUnit_0_ram_data_morse": {
+        "ports": [
+          "ControlUnit_0/ram_data_morse",
+          "sistema_morse_0/ram_data_morse"
+        ]
+      },
+      "ControlUnit_0_ram_data_mask": {
+        "ports": [
+          "ControlUnit_0/ram_data_mask",
+          "sistema_morse_0/ram_data_mask"
+        ]
+      },
+      "ControlUnit_0_ram_addr": {
+        "ports": [
+          "ControlUnit_0/ram_addr",
+          "sistema_morse_0/ram_addr"
+        ]
+      },
+      "sistema_morse_0_led": {
+        "ports": [
+          "sistema_morse_0/led",
+          "led",
+          "ila_0/probe0"
+        ]
+      },
+      "sistema_morse_0_morse_out": {
+        "ports": [
+          "sistema_morse_0/morse_out",
+          "ila_0/probe1"
+        ]
+      },
+      "sistema_morse_0_mask_out": {
+        "ports": [
+          "sistema_morse_0/mask_out",
+          "ila_0/probe2"
+        ]
+      },
+      "RGB_Controller_1_red": {
+        "ports": [
+          "RGB_Controller_1/red",
+          "red"
+        ]
+      },
+      "RGB_Controller_1_green": {
+        "ports": [
+          "RGB_Controller_1/green",
+          "green"
+        ]
+      },
+      "RGB_Controller_1_blue": {
+        "ports": [
+          "RGB_Controller_1/blue",
+          "blue"
+        ]
+      },
+      "vio_0_probe_out2": {
+        "ports": [
+          "vio_0/probe_out2",
+          "RGB_Controller_1/estado"
+        ]
+      }
+    }
+  }
+}

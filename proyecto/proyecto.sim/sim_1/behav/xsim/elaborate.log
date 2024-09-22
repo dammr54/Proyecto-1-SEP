@@ -12,6 +12,7 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
 Compiling architecture behavioral of entity xil_defaultlib.ParpadeoMorse [parpadeomorse_default]
 Compiling architecture behavioral of entity xil_defaultlib.tb_parpadeomorse
 Built simulation snapshot tb_ParpadeoMorse_behav
