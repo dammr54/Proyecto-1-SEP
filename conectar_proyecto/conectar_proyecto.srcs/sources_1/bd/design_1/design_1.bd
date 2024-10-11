@@ -6,60 +6,26 @@
       "name": "design_1",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2020.1",
-      "validated": "true"
+      "tool_version": "2020.1"
     },
     "design_tree": {
       "vio_0": "",
       "ila_0": "",
-      "sistema_morse_0": "",
       "ControlUnit_0": "",
-      "RGB_Controller_1": ""
+      "RGB_Controller_1": "",
+      "axi_traffic_gen_0": "",
+      "axi_traffic_gen_1": "",
+      "smartconnect_0": "",
+      "sistema_morse_0": ""
     },
     "ports": {
       "clk": {
         "type": "clk",
-        "direction": "I",
-        "parameters": {
-          "ASSOCIATED_RESET": {
-            "value": "rst",
-            "value_src": "default"
-          },
-          "CLK_DOMAIN": {
-            "value": "design_1_clk_0",
-            "value_src": "default"
-          },
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.000",
-            "value_src": "default"
-          }
-        }
+        "direction": "I"
       },
       "rst": {
         "type": "rst",
-        "direction": "I",
-        "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "POLARITY": {
-            "value": "ACTIVE_LOW",
-            "value_src": "default"
-          }
-        }
+        "direction": "I"
       },
       "btn3": {
         "direction": "I"
@@ -128,10 +94,6 @@
           }
         }
       },
-      "sistema_morse_0": {
-        "vlnv": "xilinx.com:user:sistema_morse:1.0",
-        "xci_name": "design_1_sistema_morse_0_0"
-      },
       "ControlUnit_0": {
         "vlnv": "xilinx.com:user:ControlUnit:1.0",
         "xci_name": "design_1_ControlUnit_0_0"
@@ -139,6 +101,133 @@
       "RGB_Controller_1": {
         "vlnv": "xilinx.com:user:RGB_Controller:1.0",
         "xci_name": "design_1_RGB_Controller_1_0"
+      },
+      "axi_traffic_gen_0": {
+        "vlnv": "xilinx.com:ip:axi_traffic_gen:3.0",
+        "xci_name": "design_1_axi_traffic_gen_0_0",
+        "addressing": {
+          "address_spaces": {
+            "Data": {
+              "range": "4G",
+              "width": "32"
+            }
+          },
+          "interface_ports": {
+            "S_AXI": {
+              "mode": "Slave",
+              "memory_map_ref": "S_AXI"
+            },
+            "M_AXI": {
+              "mode": "Master",
+              "address_space_ref": "Data",
+              "base_address": {
+                "minimum": "0x00000000",
+                "maximum": "0xFFFFFFFF"
+              }
+            }
+          }
+        }
+      },
+      "axi_traffic_gen_1": {
+        "vlnv": "xilinx.com:ip:axi_traffic_gen:3.0",
+        "xci_name": "design_1_axi_traffic_gen_1_0",
+        "parameters": {
+          "C_ATG_MODE": {
+            "value": "AXI4-Lite"
+          },
+          "C_ATG_SYSINIT_MODES": {
+            "value": "System_Test"
+          },
+          "C_ATG_SYSTEM_CMD_MAX_RETRY": {
+            "value": "2147483647"
+          },
+          "C_ATG_SYSTEM_INIT_ADDR_MIF": {
+            "value": "../../../../../../../support/addr.coe"
+          },
+          "C_ATG_SYSTEM_INIT_CTRL_MIF": {
+            "value": "../../../../../../../support/ctrl.coe"
+          },
+          "C_ATG_SYSTEM_INIT_DATA_MIF": {
+            "value": "../../../../../../../support/data.coe"
+          },
+          "C_ATG_SYSTEM_INIT_MASK_MIF": {
+            "value": "../../../../../../../support/mask.coe"
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "Reg1": {
+              "range": "4G",
+              "width": "32"
+            }
+          },
+          "interface_ports": {
+            "M_AXI_LITE_CH1": {
+              "mode": "Master",
+              "address_space_ref": "Reg1",
+              "base_address": {
+                "minimum": "0x00000000",
+                "maximum": "0xFFFFFFFF"
+              },
+              "master_id": "0",
+              "parameters": {
+                "master_id": {
+                  "value": "0"
+                }
+              }
+            }
+          }
+        }
+      },
+      "smartconnect_0": {
+        "vlnv": "xilinx.com:ip:smartconnect:1.0",
+        "xci_name": "design_1_smartconnect_0_0",
+        "parameters": {
+          "NUM_SI": {
+            "value": "1"
+          }
+        },
+        "interface_ports": {
+          "S00_AXI": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "bridges": [
+              "M00_AXI"
+            ]
+          },
+          "M00_AXI": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          }
+        },
+        "addressing": {
+          "interface_ports": {
+            "S00_AXI": {
+              "mode": "Slave",
+              "bridges": [
+                "M00_AXI"
+              ]
+            }
+          }
+        }
+      },
+      "sistema_morse_0": {
+        "vlnv": "xilinx.com:user:sistema_morse:1.0",
+        "xci_name": "design_1_sistema_morse_0_0"
+      }
+    },
+    "interface_nets": {
+      "smartconnect_0_M00_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M00_AXI",
+          "axi_traffic_gen_0/S_AXI"
+        ]
+      },
+      "axi_traffic_gen_1_M_AXI_LITE_CH1": {
+        "interface_ports": [
+          "axi_traffic_gen_1/M_AXI_LITE_CH1",
+          "smartconnect_0/S00_AXI"
+        ]
       }
     },
     "nets": {
@@ -147,16 +236,16 @@
           "clk",
           "vio_0/clk",
           "ila_0/clk",
-          "sistema_morse_0/clk",
           "ControlUnit_0/clk",
-          "RGB_Controller_1/clk"
+          "RGB_Controller_1/clk",
+          "sistema_morse_0/clk"
         ]
       },
       "rst_0_1": {
         "ports": [
           "rst",
-          "sistema_morse_0/rst",
-          "ControlUnit_0/rst"
+          "ControlUnit_0/rst",
+          "sistema_morse_0/rst"
         ]
       },
       "btn_enable_0_1": {
@@ -267,6 +356,24 @@
           "vio_0/probe_out2",
           "RGB_Controller_1/estado"
         ]
+      }
+    },
+    "addressing": {
+      "/axi_traffic_gen_0": {
+        "address_spaces": {
+          "Data": {
+            "range": "4G",
+            "width": "32"
+          }
+        }
+      },
+      "/axi_traffic_gen_1": {
+        "address_spaces": {
+          "Reg1": {
+            "range": "4G",
+            "width": "32"
+          }
+        }
       }
     }
   }

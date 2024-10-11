@@ -55,7 +55,8 @@ PORT (
 CLK : IN STD_LOGIC;
 
 probe_out0 : OUT STD_LOGIC_VECTOR(5 DOWNTO 0) := "000000";
-probe_out1 : OUT STD_LOGIC_VECTOR(0 DOWNTO 0) := "0" 
+probe_out1 : OUT STD_LOGIC_VECTOR(0 DOWNTO 0) := "0" ;
+probe_out2 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0) := "0000" 
 );
 END design_1_vio_0_0;
 ARCHITECTURE design_1_vio_0_0_arch OF design_1_vio_0_0 IS

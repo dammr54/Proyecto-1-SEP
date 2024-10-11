@@ -3,6 +3,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity sistema_morse is
+    generic (
+            MAX_COUNT_LONG  : integer := 125000000;  -- Valor por defecto para el parpadeo largo
+            MAX_COUNT_SHORT : integer := 62500000    -- Valor por defecto para el parpadeo corto
+    );
     Port (
         clk : in std_logic;
         rst : in std_logic;
@@ -53,6 +57,10 @@ architecture Behavioral of sistema_morse is
 
     -- Instanciar el componente de ParpadeoMorse
     component ParpadeoMorse
+        generic (
+            MAX_COUNT_LONG  : integer := 125000000;  -- Valor por defecto para el parpadeo largo
+            MAX_COUNT_SHORT : integer := 62500000    -- Valor por defecto para el parpadeo corto
+        );
         Port (
             clk      : in  STD_LOGIC;             -- Señal de reloj
             rst      : in  STD_LOGIC;             -- Señal de reset
@@ -93,6 +101,10 @@ begin
 
     -- Instanciar el componente de ParpadeoMorse
     parpadeo_morse_inst : ParpadeoMorse
+        generic map (
+            MAX_COUNT_LONG  => MAX_COUNT_LONG,   -- Configuración del parámetro genérico
+            MAX_COUNT_SHORT => MAX_COUNT_SHORT     -- Configuración del parámetro genérico
+        )
         Port Map (
             clk => clk,
             rst => rst,

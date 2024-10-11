@@ -3,6 +3,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity ParpadeoMorse is
+    generic (
+            MAX_COUNT_LONG  : integer := 125000000;  -- Valor por defecto para el parpadeo largo
+            MAX_COUNT_SHORT : integer := 62500000    -- Valor por defecto para el parpadeo corto
+    );
     Port (
         clk      : in  STD_LOGIC;
         rst      : in  STD_LOGIC;
@@ -32,8 +36,6 @@ architecture Behavioral of ParpadeoMorse is
 
     signal contador      : integer := 0;
     signal bit_idx       : integer range 0 to 4 := 4;
-    constant MAX_COUNT_LONG  : integer := 125000000;
-    constant MAX_COUNT_SHORT : integer := 62500000;
     signal led_state     : STD_LOGIC := '0';
     signal count_limit   : integer := 0;
     signal sequence_done : BOOLEAN := FALSE;
