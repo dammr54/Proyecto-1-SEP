@@ -1,52 +1,64 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.761384",
-   "Default View_TopLeft":"1,-206",
+   "Default View_ScaleFactor":"0.92448",
+   "Default View_TopLeft":"-16,413",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port clk -pg 1 -lvl 0 -x -140 -y 160 -defaultsOSRD
-preplace port rst -pg 1 -lvl 0 -x -140 -y 180 -defaultsOSRD
-preplace port btn3 -pg 1 -lvl 0 -x -140 -y 200 -defaultsOSRD
-preplace port btn1 -pg 1 -lvl 0 -x -140 -y 220 -defaultsOSRD
-preplace port btn2 -pg 1 -lvl 0 -x -140 -y 240 -defaultsOSRD
-preplace port led -pg 1 -lvl 6 -x 1490 -y 40 -defaultsOSRD
-preplace port red -pg 1 -lvl 6 -x 1490 -y 410 -defaultsOSRD
-preplace port green -pg 1 -lvl 6 -x 1490 -y 430 -defaultsOSRD
-preplace port blue -pg 1 -lvl 6 -x 1490 -y 450 -defaultsOSRD
-preplace portBus sw -pg 1 -lvl 0 -x -140 -y 260 -defaultsOSRD
-preplace inst vio_0 -pg 1 -lvl 3 -x 800 -y 420 -defaultsOSRD
-preplace inst ila_0 -pg 1 -lvl 5 -x 1370 -y 130 -defaultsOSRD
-preplace inst ControlUnit_0 -pg 1 -lvl 3 -x 800 -y 210 -defaultsOSRD
-preplace inst RGB_Controller_1 -pg 1 -lvl 5 -x 1370 -y 430 -defaultsOSRD
-preplace inst axi_traffic_gen_0 -pg 1 -lvl 3 -x 800 -y -140 -defaultsOSRD
-preplace inst axi_traffic_gen_1 -pg 1 -lvl 1 -x 210 -y -100 -defaultsOSRD
-preplace inst smartconnect_0 -pg 1 -lvl 2 -x 510 -y -130 -defaultsOSRD
-preplace inst sistema_morse_0 -pg 1 -lvl 4 -x 1110 -y 140 -defaultsOSRD
-preplace netloc clk_0_1 1 0 5 N 160 N 160 650 70 940 280 1270
-preplace netloc rst_0_1 1 0 4 N 180 N 180 660 80 NJ
-preplace netloc btn_enable_0_1 1 0 3 NJ 200 N 200 N
-preplace netloc boton1_0_1 1 0 3 NJ 220 N 220 N
-preplace netloc boton2_0_1 1 0 3 NJ 240 N 240 N
-preplace netloc switches_0_1 1 0 3 NJ 260 N 260 N
-preplace netloc vio_0_probe_out0 1 3 1 960 120n
-preplace netloc vio_0_probe_out1 1 3 1 950 100n
-preplace netloc ControlUnit_0_write_in 1 3 1 N 140
-preplace netloc ControlUnit_0_ram_enable 1 3 1 N 160
-preplace netloc ControlUnit_0_ram_data_morse 1 3 1 N 180
-preplace netloc ControlUnit_0_ram_data_mask 1 3 1 N 200
-preplace netloc ControlUnit_0_ram_addr 1 3 1 N 220
-preplace netloc sistema_morse_0_led 1 4 2 1260 40 NJ
-preplace netloc sistema_morse_0_morse_out 1 4 1 N 140
-preplace netloc sistema_morse_0_mask_out 1 4 1 N 160
-preplace netloc RGB_Controller_1_red 1 5 1 NJ 410
-preplace netloc RGB_Controller_1_green 1 5 1 NJ 430
-preplace netloc RGB_Controller_1_blue 1 5 1 NJ 450
-preplace netloc vio_0_probe_out2 1 3 2 N 440 NJ
-preplace netloc axi_traffic_gen_1_M_AXI_LITE_CH1 1 1 1 360 -150n
-preplace netloc smartconnect_0_M00_AXI 1 2 1 650 -170n
-levelinfo -pg 1 -140 210 510 800 1110 1370 1490
-pagesize -pg 1 -db -bbox -sgen -240 -510 1580 520
+preplace port clk -pg 1 -lvl 0 -x -10 -y 520 -defaultsOSRD
+preplace port rst -pg 1 -lvl 0 -x -10 -y 610 -defaultsOSRD
+preplace port btn3 -pg 1 -lvl 0 -x -10 -y 200 -defaultsOSRD
+preplace port btn1 -pg 1 -lvl 0 -x -10 -y 220 -defaultsOSRD
+preplace port btn2 -pg 1 -lvl 0 -x -10 -y 240 -defaultsOSRD
+preplace port led -pg 1 -lvl 7 -x 1930 -y 520 -defaultsOSRD
+preplace port red -pg 1 -lvl 7 -x 1930 -y 420 -defaultsOSRD
+preplace port green -pg 1 -lvl 7 -x 1930 -y 440 -defaultsOSRD
+preplace port blue -pg 1 -lvl 7 -x 1930 -y 460 -defaultsOSRD
+preplace portBus sw -pg 1 -lvl 0 -x -10 -y 260 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 4 -x 1200 -y 430 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 6 -x 1810 -y 650 -defaultsOSRD
+preplace inst axi_traffic_gen_0 -pg 1 -lvl 3 -x 940 -y 670 -defaultsOSRD
+preplace inst axi_traffic_gen_1 -pg 1 -lvl 1 -x 170 -y 600 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 2 -x 680 -y 640 -defaultsOSRD
+preplace inst ila_1 -pg 1 -lvl 2 -x 680 -y 510 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -x 1200 -y 670 -defaultsOSRD
+preplace inst RAM_AXI_FULL_0 -pg 1 -lvl 5 -x 1530 -y 690 -defaultsOSRD
+preplace inst ControlUnit_0 -pg 1 -lvl 4 -x 1200 -y 210 -defaultsOSRD
+preplace inst RGB_Controller_1 -pg 1 -lvl 6 -x 1810 -y 440 -defaultsOSRD
+preplace inst sistema_morse_0 -pg 1 -lvl 5 -x 1530 -y 140 -defaultsOSRD
+preplace inst ila_2 -pg 1 -lvl 5 -x 1530 -y 860 -defaultsOSRD
+preplace netloc clk_0_1 1 0 6 10 520 320 720 830 580 1050 70 1350 430 1710
+preplace netloc rst_0_1 1 0 5 10 680 330 730 820 570 1060 80 1370
+preplace netloc btn_enable_0_1 1 0 4 NJ 200 NJ 200 NJ 200 NJ
+preplace netloc boton1_0_1 1 0 4 NJ 220 NJ 220 NJ 220 NJ
+preplace netloc boton2_0_1 1 0 4 NJ 240 NJ 240 NJ 240 NJ
+preplace netloc switches_0_1 1 0 4 NJ 260 NJ 260 NJ 260 NJ
+preplace netloc vio_0_probe_out0 1 4 1 1360 120n
+preplace netloc vio_0_probe_out1 1 4 1 1340 100n
+preplace netloc ControlUnit_0_write_in 1 4 1 N 140
+preplace netloc ControlUnit_0_ram_enable 1 4 1 N 160
+preplace netloc ControlUnit_0_ram_data_morse 1 4 1 N 180
+preplace netloc ControlUnit_0_ram_data_mask 1 4 1 N 200
+preplace netloc ControlUnit_0_ram_addr 1 4 1 N 220
+preplace netloc sistema_morse_0_led 1 5 2 1700 520 NJ
+preplace netloc sistema_morse_0_morse_out 1 5 1 1690 140n
+preplace netloc sistema_morse_0_mask_out 1 5 1 1680 160n
+preplace netloc RGB_Controller_1_red 1 6 1 NJ 420
+preplace netloc RGB_Controller_1_green 1 6 1 NJ 440
+preplace netloc RGB_Controller_1_blue 1 6 1 NJ 460
+preplace netloc vio_0_probe_out2 1 4 2 NJ 450 N
+preplace netloc RAM_AXI_FULL_0_test1 1 5 1 N 660
+preplace netloc RAM_AXI_FULL_0_test2 1 5 1 N 680
+preplace netloc RAM_AXI_FULL_0_test3 1 5 1 N 700
+preplace netloc RAM_AXI_FULL_0_test4 1 5 1 N 720
+preplace netloc axi_traffic_gen_1_M_AXI_LITE_CH1 1 1 1 330 500n
+preplace netloc smartconnect_0_M00_AXI 1 2 1 N 640
+preplace netloc axi_traffic_gen_0_M_AXI 1 3 1 N 650
+preplace netloc axi_smc_M00_AXI 1 4 1 1340 670n
+levelinfo -pg 1 -10 170 680 940 1200 1530 1810 1930
+pagesize -pg 1 -db -bbox -sgen -110 0 2020 930
 "
 }
-0
+{
+   "da_axi4_cnt":"1"
+}

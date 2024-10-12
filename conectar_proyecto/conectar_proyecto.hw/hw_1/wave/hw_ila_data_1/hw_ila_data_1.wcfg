@@ -10,14 +10,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1024fs"></ZoomEndTime>
-      <Cursor1Time time="495fs"></Cursor1Time>
+      <ZoomEndTime time="1025fs"></ZoomEndTime>
+      <Cursor1Time time="178fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="133"></NameColumnWidth>
+      <NameColumnWidth column_width="129"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="3" />
+   <WVObjectSize size="7" />
    <wave_markers>
    </wave_markers>
    <wvobject fp_name="design_1_i/sistema_morse_0_led" type="logic">
@@ -40,6 +40,38 @@
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">design_1_i/sistema_morse_0_morse_out[4:0]</obj_property>
       <obj_property name="ObjectShortName">sistema_morse_0_morse_out[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/RAM_AXI_FULL_0_test1" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/RAM_AXI_FULL_0_test1[9:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM_AXI_FULL_0_test1[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/RAM_AXI_FULL_0_test2" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/RAM_AXI_FULL_0_test2[9:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM_AXI_FULL_0_test2[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/RAM_AXI_FULL_0_test3" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/RAM_AXI_FULL_0_test3[9:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM_AXI_FULL_0_test3[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/RAM_AXI_FULL_0_test4" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/RAM_AXI_FULL_0_test4[9:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM_AXI_FULL_0_test4[9:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>

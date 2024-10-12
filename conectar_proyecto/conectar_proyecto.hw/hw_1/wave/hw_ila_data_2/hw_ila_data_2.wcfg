@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1025fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="129"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_ARADDR" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_ARADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_ARADDR[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_ARREADY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_ARREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_ARVALID" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_ARVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_AWADDR" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_AWADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_AWADDR[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_AWPROT" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_AWPROT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_AWPROT[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_AWREADY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_AWREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_AWVALID" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_AWVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_BREADY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_BREADY</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_BREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_BRESP" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_BRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_BRESP[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_BVALID" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_BVALID</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_BVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_RDATA" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_RDATA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_RREADY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_RREADY</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_RREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_RRESP" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_RRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_RRESP[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_RVALID" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_RVALID</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_RVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_WDATA" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_WDATA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_WREADY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_WREADY</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_WREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_WSTRB" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_WSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_WSTRB[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_WVALID" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/axi_traffic_gen_1_M_AXI_LITE_CH1_WVALID</obj_property>
+      <obj_property name="ObjectShortName">axi_traffic_gen_1_M_AXI_LITE_CH1_WVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/probe17" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/probe17[2:0]</obj_property>
+      <obj_property name="ObjectShortName">probe17[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

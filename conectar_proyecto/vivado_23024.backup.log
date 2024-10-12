@@ -1,0 +1,250 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Oct 11 21:02:36 2024
+# Process ID: 23024
+# Current directory: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23660 C:\Users\Diego\Desktop\Proyecto-1-SEP\conectar_proyecto\conectar_proyecto.xpr
+# Log file: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/vivado.log
+# Journal file: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Diego/Desktop/Proyecto-1-SEP'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/Diego/Desktop/Proyecto-1-SEP' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Programas/xilin/Vivado/2020.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_RAM_AXI_FULL_0_0
+
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1059.824 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:vio:3.0 - vio_0
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:user:ControlUnit:1.0 - ControlUnit_0
+Adding component instance block -- xilinx.com:user:RGB_Controller:1.0 - RGB_Controller_1
+Adding component instance block -- xilinx.com:ip:axi_traffic_gen:3.0 - axi_traffic_gen_0
+Adding component instance block -- xilinx.com:ip:axi_traffic_gen:3.0 - axi_traffic_gen_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:user:sistema_morse:1.0 - sistema_morse_0
+Adding component instance block -- xilinx.com:user:RAM_AXI_FULL:1.0 - RAM_AXI_FULL_0
+Successfully read diagram <design_1> from BD file <C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1301.633 ; gain = 2.727
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:RAM_AXI_FULL:1.0 [get_ips  design_1_RAM_AXI_FULL_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_RAM_AXI_FULL_0_0 (RAM_AXI_FULL_v1.0 1.0) from revision 1 to revision 2
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'test'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_RAM_AXI_FULL_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_RAM_AXI_FULL_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\Diego\Desktop\Proyecto-1-SEP\conectar_proyecto\conectar_proyecto.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_RAM_AXI_FULL_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_1
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_1: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+endgroup
+set_property location {6 1496 703} [get_bd_cells ila_1]
+set_property location {5 1569 557} [get_bd_cells ila_1]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+connect_bd_net [get_bd_ports clk] [get_bd_pins ila_1/clk]
+connect_bd_intf_net [get_bd_intf_pins ila_1/SLOT_0_AXI] [get_bd_intf_pins RAM_AXI_FULL_0/S00_AXI]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.C_PROBE3_WIDTH {10} CONFIG.C_NUM_OF_PROBES {4}] [get_bd_cells ila_0]
+endgroup
+connect_bd_net [get_bd_pins RAM_AXI_FULL_0/test] [get_bd_pins ila_0/probe3]
+save_bd_design
+Wrote  : <C:\Users\Diego\Desktop\Proyecto-1-SEP\conectar_proyecto\conectar_proyecto.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+validate_bd_design
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /RAM_AXI_FULL_0/S00_AXI(0) and /axi_traffic_gen_0/M_AXI(1)
+WARNING: [BD 41-237] Bus Interface property WUSER_WIDTH does not match between /ila_1/SLOT_0_AXI(1) and /axi_traffic_gen_0/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /ila_1/SLOT_0_AXI(1) and /axi_traffic_gen_0/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /ila_1/SLOT_0_AXI(1) and /axi_traffic_gen_0/M_AXI(0)
+ipx::edit_ip_in_project -upgrade true -name RAM_AXI_FULL_v1_0_project -directory C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.tmp/RAM_AXI_FULL_v1_0_project c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/diego/desktop/proyecto-1-sep/conectar_proyecto/conectar_proyecto.tmp/ram_axi_full_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Programas/xilin/Vivado/2020.1/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Diego/Desktop/Proyecto-1-SEP'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+update_compile_order -fileset sources_1
+current_project conectar_proyecto
+validate_bd_design -force
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-237] Bus Interface property SUPPORTS_NARROW_BURST does not match between /RAM_AXI_FULL_0/S00_AXI(0) and /axi_traffic_gen_0/M_AXI(1)
+WARNING: [BD 41-237] Bus Interface property WUSER_WIDTH does not match between /ila_1/SLOT_0_AXI(1) and /axi_traffic_gen_0/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /ila_1/SLOT_0_AXI(1) and /axi_traffic_gen_0/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /ila_1/SLOT_0_AXI(1) and /axi_traffic_gen_0/M_AXI(0)
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting range_value property on PARAM_VALUE.ATG_HLT_CH_SELECT is not allowed in procedure update_gui_for_PARAM_VALUE.TRAFFIC_PROFILE
+delete_bd_objs [get_bd_intf_nets axi_traffic_gen_0_M_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk (100 MHz)} Clk_slave {/clk (100 MHz)} Clk_xbar {/clk (100 MHz)} Master {/axi_traffic_gen_0/M_AXI} Slave {/RAM_AXI_FULL_0/S00_AXI} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins RAM_AXI_FULL_0/S00_AXI]
+regenerate_bd_layout
+validate_bd_design
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+save_bd_design
+Wrote  : <C:\Users\Diego\Desktop\Proyecto-1-SEP\conectar_proyecto\conectar_proyecto.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+regenerate_bd_layout
+report_ip_status -name ip_status 
+make_wrapper -files [get_files C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\Diego\Desktop\Proyecto-1-SEP\conectar_proyecto\conectar_proyecto.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+make_wrapper: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1558.848 ; gain = 125.555
+reset_run synth_1
+reset_run design_1_ila_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\Diego\Desktop\Proyecto-1-SEP\conectar_proyecto\conectar_proyecto.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sistema_morse_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_1 .
+Exporting to file c:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RAM_AXI_FULL_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ip/design_1_ila_1_0/design_1_ila_1_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_1 .
+Exporting to file c:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file c:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File c:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+Exporting to file C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Fri Oct 11 21:12:16 2024] Launched design_1_ila_0_0_synth_1, design_1_RAM_AXI_FULL_0_0_synth_1, design_1_sistema_morse_0_0_synth_1, design_1_axi_traffic_gen_1_0_synth_1, design_1_axi_traffic_gen_0_0_synth_1, design_1_smartconnect_0_0_synth_1, design_1_ila_1_0_synth_1, design_1_axi_smc_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_ila_0_0_synth_1: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.runs/design_1_ila_0_0_synth_1/runme.log
+design_1_RAM_AXI_FULL_0_0_synth_1: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.runs/design_1_RAM_AXI_FULL_0_0_synth_1/runme.log
+design_1_sistema_morse_0_0_synth_1: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.runs/design_1_sistema_morse_0_0_synth_1/runme.log
+design_1_axi_traffic_gen_1_0_synth_1: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.runs/design_1_axi_traffic_gen_1_0_synth_1/runme.log
+design_1_axi_traffic_gen_0_0_synth_1: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.runs/design_1_axi_traffic_gen_0_0_synth_1/runme.log
+design_1_smartconnect_0_0_synth_1: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.runs/design_1_smartconnect_0_0_synth_1/runme.log
+design_1_ila_1_0_synth_1: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.runs/design_1_ila_1_0_synth_1/runme.log
+design_1_axi_smc_0_synth_1: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.runs/design_1_axi_smc_0_synth_1/runme.log
+synth_1: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.runs/synth_1/runme.log
+[Fri Oct 11 21:12:17 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1582.445 ; gain = 23.598
+current_project RAM_AXI_FULL_v1_0_project
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-4300] HDL parameter 'C_S00_AXI_AWUSER_WIDTH' has its value changed from '1' to '0'.
+WARNING: [IP_Flow 19-4300] HDL parameter 'C_S00_AXI_ARUSER_WIDTH' has its value changed from '1' to '0'.
+WARNING: [IP_Flow 19-4300] HDL parameter 'C_S00_AXI_WUSER_WIDTH' has its value changed from '1' to '0'.
+WARNING: [IP_Flow 19-4300] HDL parameter 'C_S00_AXI_RUSER_WIDTH' has its value changed from '1' to '0'.
+WARNING: [IP_Flow 19-4300] HDL parameter 'C_S00_AXI_BUSER_WIDTH' has its value changed from '1' to '0'.
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0/component.xml' ignored by IP packager.
+set_property core_revision 3 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0
+CRITICAL WARNING: [IP_Flow 19-1681] Failed to reload user IP repository 'c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0'. ''c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0' is not valid: Path is contained within another repository.'
+0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:RAM_AXI_FULL:1.0 [get_ips  design_1_RAM_AXI_FULL_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_RAM_AXI_FULL_0_0 from RAM_AXI_FULL_v1.0 1.0 to RAM_AXI_FULL_v1.0 1.0
+Wrote  : <C:\Users\Diego\Desktop\Proyecto-1-SEP\conectar_proyecto\conectar_proyecto.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_RAM_AXI_FULL_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+regenerate_bd_layout
+connect_bd_intf_net [get_bd_intf_pins ila_1/SLOT_0_AXI] [get_bd_intf_pins RAM_AXI_FULL_0/S00_AXI]
+save_bd_design
+Wrote  : <C:\Users\Diego\Desktop\Proyecto-1-SEP\conectar_proyecto\conectar_proyecto.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+regenerate_bd_layout
+ipx::edit_ip_in_project -upgrade true -name RAM_AXI_FULL_v1_0_project -directory C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.tmp/RAM_AXI_FULL_v1_0_project c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/diego/desktop/proyecto-1-sep/conectar_proyecto/conectar_proyecto.tmp/ram_axi_full_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Programas/xilin/Vivado/2020.1/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Diego/Desktop/Proyecto-1-SEP'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+set_property core_revision 4 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0
+CRITICAL WARNING: [IP_Flow 19-1681] Failed to reload user IP repository 'c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0'. ''c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0' is not valid: Path is contained within another repository.'
+0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:RAM_AXI_FULL:1.0 [get_ips  design_1_RAM_AXI_FULL_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_RAM_AXI_FULL_0_0 from RAM_AXI_FULL_v1.0 1.0 to RAM_AXI_FULL_v1.0 1.0
+Wrote  : <C:\Users\Diego\Desktop\Proyecto-1-SEP\conectar_proyecto\conectar_proyecto.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_RAM_AXI_FULL_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name RAM_AXI_FULL_v1_0_project -directory C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.tmp/RAM_AXI_FULL_v1_0_project c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/diego/desktop/proyecto-1-sep/conectar_proyecto/conectar_proyecto.tmp/ram_axi_full_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Programas/xilin/Vivado/2020.1/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Diego/Desktop/Proyecto-1-SEP'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+update_compile_order -fileset sources_1
+set_property core_revision 5 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0
+CRITICAL WARNING: [IP_Flow 19-1681] Failed to reload user IP repository 'c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0'. ''c:/Users/Diego/Desktop/Proyecto-1-SEP/ip_repo/RAM_AXI_FULL_1.0' is not valid: Path is contained within another repository.'
+0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:RAM_AXI_FULL:1.0 [get_ips  design_1_RAM_AXI_FULL_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_RAM_AXI_FULL_0_0 from RAM_AXI_FULL_v1.0 1.0 to RAM_AXI_FULL_v1.0 1.0
+Wrote  : <C:\Users\Diego\Desktop\Proyecto-1-SEP\conectar_proyecto\conectar_proyecto.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/conectar_proyecto.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_RAM_AXI_FULL_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 11 21:20:26 2024...
