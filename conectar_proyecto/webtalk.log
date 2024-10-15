@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Oct 11 23:53:50 2024
+# Process ID: 6748
+# Current directory: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto
+# Command line: wbtcv.exe -mode batch -source c:/users/diego/desktop/proyecto-1-sep/conectar_proyecto/conectar_proyecto.tmp/ram_axi_full_v1_0_project/RAM_AXI_FULL_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto/webtalk.log
+# Journal file: C:/Users/Diego/Desktop/Proyecto-1-SEP/conectar_proyecto\webtalk.jou
+#-----------------------------------------------------------
+source c:/users/diego/desktop/proyecto-1-sep/conectar_proyecto/conectar_proyecto.tmp/ram_axi_full_v1_0_project/RAM_AXI_FULL_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct 11 23:53:50 2024...
